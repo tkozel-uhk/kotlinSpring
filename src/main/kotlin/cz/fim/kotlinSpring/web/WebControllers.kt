@@ -1,4 +1,4 @@
-package cz.fim.kotlinSpring
+package cz.fim.kotlinSpring.web
 
 import cz.fim.kotlinSpring.model.Osoba
 import cz.fim.kotlinSpring.model.OsobaRepository
@@ -12,8 +12,18 @@ import org.springframework.web.bind.annotation.RequestMapping
 
 
 /**
- * Webové kontroléry - namapované pod cestu ../html
+ * Index controller - rozcestník
  */
+@Controller
+class IndexController {
+
+    @GetMapping("/")
+    fun index(): String {
+        return "index"
+    }
+}
+
+
 @Controller
 @RequestMapping("/html")
 class OsobaWebController(@Autowired val osobaRepository: OsobaRepository) {

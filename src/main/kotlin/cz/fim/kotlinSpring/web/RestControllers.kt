@@ -1,4 +1,4 @@
-package cz.fim.kotlinSpring
+package cz.fim.kotlinSpring.web
 
 import cz.fim.kotlinSpring.model.Osoba
 import cz.fim.kotlinSpring.model.OsobaRepository
